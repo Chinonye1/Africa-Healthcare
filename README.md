@@ -5,6 +5,13 @@ Africa is the world's second-largest and second-most populous continent, after A
 
 ![images-1](https://github.com/Chinonye1/Africa-Healthcare/assets/61957177/2bcbaae0-0fd1-4168-a0aa-0ce3b009bbc8)
 ![images-3](https://github.com/Chinonye1/Africa-Healthcare/assets/61957177/0f274f5e-46f3-4fa9-b505-c1d4a8d38093)
+
+
+
+
+
+
+
 ![images-5](https://github.com/Chinonye1/Africa-Healthcare/assets/61957177/6dd8dadc-5b25-4cf2-bdd9-ba2605a1a909)
 ![images-2](https://github.com/Chinonye1/Africa-Healthcare/assets/61957177/b9f8f45a-dce6-4d58-884c-03893aa16d2d)
 ![images-4](https://github.com/Chinonye1/Africa-Healthcare/assets/61957177/225d1e53-e4b7-4fd4-9f12-6c65b11cabd8)
