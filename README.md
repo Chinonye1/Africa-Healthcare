@@ -22,13 +22,16 @@ Art and Fashion
 African art is diverse and ranges from sculptures, paintings, masks, and textiles. The art represents the continent’s heritage, history, and cultural beliefs. Many African artists use their work to preserve their cultures and pass them on to future generations.
 
 
+![download-2](https://github.com/Chinonye1/Africa-Healthcare/assets/61957177/135e61f4-c6c0-4854-b7f7-c6e903ce28da)
+
+![download](https://github.com/Chinonye1/Africa-Healthcare/assets/61957177/442e4e11-0969-474a-ac08-9341cf9c8dd2)
+![download-3](https://github.com/Chinonye1/Africa-Healthcare/assets/61957177/24f115e9-fd76-4709-9afc-4af7d3862bea)
+![images-9](https://github.com/Chinonye1/Africa-Healthcare/assets/61957177/d92e0ba0-0cb4-403f-ba83-d7380ceff822)
+![images-7](https://github.com/Chinonye1/Africa-Healthcare/assets/61957177/3eff4581-650f-4924-b708-6e4682dd2a6a)
 
 
 
 
-![images-5](https://github.com/Chinonye1/Africa-Healthcare/assets/61957177/6dd8dadc-5b25-4cf2-bdd9-ba2605a1a909)
-![images-2](https://github.com/Chinonye1/Africa-Healthcare/assets/61957177/b9f8f45a-dce6-4d58-884c-03893aa16d2d)
-![images-4](https://github.com/Chinonye1/Africa-Healthcare/assets/61957177/225d1e53-e4b7-4fd4-9f12-6c65b11cabd8)
 
 #   Healthcare
 Week 2
