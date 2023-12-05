@@ -20,6 +20,7 @@ Africa is the world's second-largest and second-most populous continent, after A
 ![images-4](https://github.com/Chinonye1/Africa-Healthcare/assets/61957177/225d1e53-e4b7-4fd4-9f12-6c65b11cabd8)
 
 #   Healthcare
+Week 2
 
 In Africa, healthcare faces a lot of problems. One big issue is that governments don't have enough money, making it hard to build good hospitals and pay skilled healthcare workers. The lack of funds also means that many areas, especially rural ones, don't have good medical facilities or transportation to get people to hospitals.
 There's also the constant threat of diseases like Ebola and malaria, which strain the healthcare system and show how it's not always ready to handle emergencies. Poverty is another big problem because people who don't have much money often can't afford basic healthcare, creating a cycle of sickness and financial struggle.
