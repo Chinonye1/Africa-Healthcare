@@ -1,5 +1,4 @@
-# Africa and her beauty
-Week 1
+# Africa
 
 Africa is the world's second-largest and second-most populous continent, after Asia in both aspects. At about 30.3 million km2 (11.7 million square miles) including adjacent islands, it covers 20% of Earth's land area and 6% of its total surface area. With 1.4 billion people as of 2021, it accounts for about 18% of the world's human population. Africa's population is the youngest amongst all the continents; the median age in 2012 was 19.7, when the worldwide median age was 30.4. Despite a wide range of natural resources, Africa is the least wealthy continent per capita and second-least wealthy by total wealth, ahead of Oceania. Scholars have attributed this to different factors including geography, climate, tribalism, colonialism, the Cold War, neocolonialism, lack of democracy, and corruption. Despite this low concentration of wealth, recent economic expansion and the large and young population make Africa an important economic market in the broader global context.
 
@@ -12,13 +11,13 @@ Africa is the world's second-largest and second-most populous continent, after A
 
 African culture is diverse, vibrant, and rich in traditions, customs, and beliefs. It is a beautiful mix of music, dance, art, fashion, food, and spirituality. Africa is a continent of over 50 countries, each with its unique culture and history that is worth exploring. In this article, we will delve into the beauty of African culture and celebrate its uniqueness.
 
-Music and Dance
+# Music and Dance
 
 African music and dance are a significant part of the continent’s cultural heritage. Music and dance are used to express joy, sorrow, love, and even spiritual beliefs. African music is characterized by the use of drums, percussion instruments, and vocals. The rhythms and melodies are hypnotic and can move even the shyest person to dance.
 
 Dance is an integral part of African culture and is often used to celebrate important life events, such as weddings, births, and coming-of-age ceremonies. The dances vary from country to country, but they all share a common feature — they are energetic and full of life. The dances are usually accompanied by traditional music and colorful costumes that add to the beauty of the performance.
 
-Art and Fashion
+# Art and Fashion
 African art is diverse and ranges from sculptures, paintings, masks, and textiles. The art represents the continent’s heritage, history, and cultural beliefs. Many African artists use their work to preserve their cultures and pass them on to future generations.
 
 
@@ -34,7 +33,6 @@ African art is diverse and ranges from sculptures, paintings, masks, and textile
 
 
 #   Healthcare
-Week 2
 
 In Africa, healthcare faces a lot of problems. One big issue is that governments don't have enough money, making it hard to build good hospitals and pay skilled healthcare workers. The lack of funds also means that many areas, especially rural ones, don't have good medical facilities or transportation to get people to hospitals.
 There's also the constant threat of diseases like Ebola and malaria, which strain the healthcare system and show how it's not always ready to handle emergencies. Poverty is another big problem because people who don't have much money often can't afford basic healthcare, creating a cycle of sickness and financial struggle.
@@ -52,16 +50,16 @@ While working in rural areas of Africa, such as Nigeria, I observed that a signi
 
 Sickle cell anemia (SCA) poses a significant health challenge in many parts of Africa, including Nigeria. Several factors contribute to the complexity of addressing sickle cell anemia in rural areas, making it a pressing public health concern. Here are some key aspects of the challenge:
 
-Genetic Prevalence:
+# Genetic Prevalence:
 
 Sickle cell anemia is a genetic disorder that occurs when individuals inherit two copies of the abnormal hemoglobin gene (HbS). In Nigeria, and many parts of sub-Saharan Africa, the prevalence of the sickle cell trait is relatively high due to historical reasons. In regions where malaria is endemic, individuals with one copy of the gene (carriers or trait) have a survival advantage against malaria. As a result, the frequency of the sickle cell gene is higher.
-Limited Awareness and Education:
+# Limited Awareness and Education:
 
 Many rural communities lack sufficient awareness and education about sickle cell anemia, including its causes, symptoms, and implications. This lack of knowledge can contribute to misconceptions, stigma, and delayed or inadequate healthcare seeking behavior.
 Limited Healthcare Infrastructure:
 
 Rural areas often face challenges in terms of healthcare infrastructure. There may be a shortage of healthcare facilities, trained healthcare professionals, and essential medical supplies. This can result in delayed diagnosis, inadequate treatment, and poor management of sickle cell anemia.
-Access to Screening and Diagnosis:
+# Access to Screening and Diagnosis:
 
 Limited access to healthcare services, including diagnostic facilities, makes it difficult for individuals in rural areas to undergo early screening and diagnosis for sickle cell anemia. Early diagnosis is crucial for implementing preventive measures and timely interventions.
 Affordability of Treatment:
