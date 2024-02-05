@@ -30,7 +30,7 @@ This blog aims to shed light on the healthcare situation in Africa, emphasizing 
 
 ## Installation
 
-No installation is required to enjoy our blog series. Simply visit our https://github.com/Chinonye1/Africa-Healthcare.git to start your journey into the heart of Africa.
+No installation is required to enjoy our blog series. Simply visit our https:[//github.com/Chinonye1/Africa-Healthcare.](https://chinonye1.github.io/Africa-Healthcare/)git to start your journey into the heart of Africa.
 
 ## Usage
 
