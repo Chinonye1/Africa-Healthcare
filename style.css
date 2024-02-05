@@ -233,3 +233,22 @@ body {
   .bd-mode-toggle .dropdown-menu .active .bi {
     display: block !important;
   }
+
+
+
+
+
+
+
+
+  code.language-python {
+    color: #abb2bf;
+}
+
+pre[class*="language-"] {
+    background: #0a0a0a;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+}

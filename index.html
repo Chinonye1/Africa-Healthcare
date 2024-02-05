@@ -1,294 +1,356 @@
-<html lang="en" >
-  <head>
+<html lang="en">
+
+<head>
 
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
 
-    <title>Health </title>
+  <title>Health </title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-<meta name="theme-color" content="#712cf9">
+  <meta name="theme-color" content="#712cf9">
 
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
 
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
 
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
 
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
 
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-      .carousel-item{
-        margin-bottom: 4rem;
-      }
-.carousel-item > img {
-  min-width:  100vw;
-  height: 50%;
-  overflow: hidden !important;
-  object-fit:cover  !important;
-  left: 0 !important;
-  right: 0 !important;
-  margin: 0 auto !important
+    .carousel-item {
+      margin-bottom: 4rem;
+    }
 
+    .carousel-item>img {
+      min-width: 100vw;
+      height: 50%;
+      overflow: hidden !important;
+      object-fit: cover !important;
+      left: 0 !important;
+      right: 0 !important;
+      margin: 0 auto !important
+    }
 
-}
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-    </style>
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+  </style>
 
 
-    <!-- Custom styles for this template -->
+  <!-- Custom styles for this template -->
 </head>
-  <body class="bg-body-tertiary">
+
+<body class="bg-body-tertiary">
 
 
-<header data-bs-theme="bg-body-tertiary ">
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark mb-4">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Health</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <header data-bs-theme="bg-body-tertiary ">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark mb-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Health</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel ">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
+          aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item card">
+          <img src="./assets/images/background.jpeg" alt="" class="img-fluid bd-placeholder-img">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Africa</h1>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="./assets/images/img12cult.jpeg" alt="" class="img-fluid bd-placeholder-img">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1></h1>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/img2dance.jpeg" alt="" class="img-fluid bd-placeholder-img">
+          <div class="container">
+            <div class="carousel-caption text-end">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </nav>
-</header>
-
-<main>
-
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel ">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>      
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item card">
-        <img src="./assets/images/background.jpeg" alt="" class="img-fluid bd-placeholder-img">
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Africa</h1>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item active">
-        <img src="./assets/images/img12cult.jpeg" alt="" class="img-fluid bd-placeholder-img">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1></h1>
-           
-
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/images/img2dance.jpeg" alt="" class="img-fluid bd-placeholder-img">
-        <div class="container">
-          <div class="carousel-caption text-end">
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
 
-  <!-- Marketing messaging and featurettes
+    <!-- Marketing messaging and featurettes
   ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-  <div class="container marketing">
+    <div class="container marketing">
 
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <img src="./assets/images/culture.jpeg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140" >
-        <h2 class="fw-normal">Culture</h2>
-        <p>Discover Africa's vibrant cultural story through rhythmic beats and vibrant fabrics—a captivating journey into a rich tapestry of tradition and creativity.</p>
-        <p><a class="btn btn-secondary" href="culture.html">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img src="./assets/images/map.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <h2 class="fw-normal">Geography</h2>
-        <p>Let's embark on a journey to discover the captivating geographical wonders of Africa.</p>
-        <p><a class="btn btn-secondary" href="geography.html">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img src="./assets/images/geopro.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <h2 class="fw-normal">Tourism sites</h2>
-        <p>Africa is a vast and diverse continent with a plethora of stunning tourist destinations. Here are some of the best tourism sites in Africa, spanning natural wonders, cultural heritage, and historical landmarks:</p>
-        <p><a class="btn btn-secondary" href="tourism.html">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img src="./assets/images/automation.jpeg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140" xmls="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <h2 class="fw-normal">Automation project</h2>
-        <p>Let's dive into the challanges faced during this project and how it can be made easy with automation</p>
-        <p><a class="btn btn-secondary" href="automation.html">View details »</a></p>
-    </div><!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Africa's Healthcare</h2>
-        <p class="lead">Healthcare in Africa faces significant challenges, including limited resources, a shortage of healthcare professionals, and a high burden of infectious diseases like HIV/AIDS, malaria, and tuberculosis. Additionally, there's a growing prevalence of non-communicable diseases such as diabetes and heart disease. Access to healthcare varies greatly, with rural areas often underserved.
-
-          Despite these challenges, there are notable improvements and innovations. Mobile health technologies are expanding access to care, and international partnerships are bolstering local healthcare systems. Governments are increasingly focusing on healthcare reforms and investments.
-          
-          Overall, while healthcare in Africa is marked by diverse and complex challenges, there are also emerging opportunities and initiatives aimed at improving health outcomes across the continent..</p>
-      </div>
-      <div class="col-md-5">
-        <img src="./assets/images/test.avif" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Sickle cell anemia in Africa</h2>
-        <p class="lead">Sickle cell disease (SCD) is a significant health challenge in Africa, home to the majority of global SCD cases. The high prevalence is partly due to the sickle cell trait providing a genetic defense against malaria. Key challenges include limited access to early diagnosis and newborn screening, insufficient awareness, and a lack of comprehensive care facilities, especially in rural areas. Managing SCD is often hampered by economic barriers and inadequate resources for pain and complication management. Addressing SCD in Africa requires improved healthcare accessibility, greater awareness, supportive national health policies, and international collaboration to enhance treatment and management strategies.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src="./assets/images/man.jpeg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
-      
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Combating Sickle Cell in Africa:  <span class="text-body-secondary">Strategies for Early Detection, Improved Care, and Community Support".</span></h2>
-        <p class="lead">
-          <h5>Newborn Screening</h5>Implementing widespread newborn screening programs to identify SCD early is crucial. Early diagnosis allows for prompt initiation of preventive care measures, potentially reducing mortality and morbidity.
-
-          <h5>Public Awareness and Education</h5> Raising awareness about SCD through public health campaigns, including its genetic basis, importance of genetic counseling, and management strategies, can significantly impact how the disease is understood and managed in communities.
-          
-          <h5>Genetic Counseling</h5> Providing accessible genetic counseling services can help prospective parents understand their risks of having a child with SCD and make informed reproductive choices.
-          
-          <h5>Improving Healthcare Access</h5> Strengthening healthcare systems to provide comprehensive care for SCD patients is vital. This includes ensuring the availability of essential medicines, regular health check-ups, and specialist care.
-          
-          <h5>Pain Management Programs</h5> Developing effective pain management protocols and ensuring the availability of necessary medications can greatly improve the quality of life for SCD patients.
-          
-          <h5>Preventive Care</h5> Regular vaccination and prophylactic antibiotics for children with SCD can prevent severe infections. Educating families about the importance of hydration, infection prevention, and recognizing early signs of complications is also key.
-          
-          <h5>Research and Development</h5> Investing in research specific to the African context, focusing on better treatment modalities, disease management strategies, and potentially curative therapies like gene therapy, is important.
-          
-          <h5>Community Support Systems</h5> Building strong community support networks, including support groups and advocacy organizations, can provide emotional and social support to individuals and families affected by SCD.
-          
-          <h5>Policy and Funding</h5> Developing national health policies that prioritize SCD as a significant health issue and allocating sufficient resources for SCD programs are essential steps.
-          
-          <h5>International Collaboration</h5> Collaborating with international health organizations and leveraging global expertise and resources can aid in building capacity for SCD care and research in Africa.</p>
-      </div>
-      <div class="col-md-5">
-<img src="./assets/images/childinject.jpeg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto shadow-lg p-3 mb-5 bg-body-tertiary rounded" width="500" height="500">
-   </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="./assets/images/culture.jpeg" alt="" class="bd-placeholder-img rounded-circle" width="140"
+            height="140">
+          <h2 class="fw-normal">Culture</h2>
+          <p>Discover Africa's vibrant cultural story through rhythmic beats and vibrant fabrics—a captivating journey
+            into a rich tapestry of tradition and creativity.</p>
+          <p><a class="btn btn-secondary" href="culture.html">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="./assets/images/map.jpeg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
+          <h2 class="fw-normal">Geography</h2>
+          <p>Let's embark on a journey to discover the captivating geographical wonders of Africa.</p>
+          <p><a class="btn btn-secondary" href="geography.html">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="./assets/images/geopro.jpeg" alt="" class="bd-placeholder-img rounded-circle" width="140"
+            height="140">
+          <h2 class="fw-normal">Tourism sites</h2>
+          <p>Africa is a vast and diverse continent with a plethora of stunning tourist destinations. Here are some of
+            the best tourism sites in Africa, spanning natural wonders, cultural heritage, and historical landmarks:</p>
+          <p><a class="btn btn-secondary" href="tourism.html">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="./assets/images/automation.jpeg" alt="" class="bd-placeholder-img rounded-circle" width="140"
+            height="140">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+          <h2 class="fw-normal">Automation project</h2>
+          <p>Let's dive into the challanges faced during this project and how it can be made easy with automation</p>
+          <p><a class="btn btn-secondary" href="automation.html">View details »</a></p>
+        </div><!-- /.row -->
 
 
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Africa's Healthcare</h2>
+            <p class="lead">Healthcare in Africa faces significant challenges, including limited resources, a shortage
+              of healthcare professionals, and a high burden of infectious diseases like HIV/AIDS, malaria, and
+              tuberculosis. Additionally, there's a growing prevalence of non-communicable diseases such as diabetes and
+              heart disease. Access to healthcare varies greatly, with rural areas often underserved.
+
+              Despite these challenges, there are notable improvements and innovations. Mobile health technologies are
+              expanding access to care, and international partnerships are bolstering local healthcare systems.
+              Governments are increasingly focusing on healthcare reforms and investments.
+
+              Overall, while healthcare in Africa is marked by diverse and complex challenges, there are also emerging
+              opportunities and initiatives aimed at improving health outcomes across the continent..</p>
+          </div>
+          <div class="col-md-5">
+            <img src="./assets/images/test.avif"
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+              height="500" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"
+              focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+              fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Sickle cell anemia in Africa</h2>
+            <p class="lead">Sickle cell disease (SCD) is a significant health challenge in Africa, home to the majority
+              of global SCD cases. The high prevalence is partly due to the sickle cell trait providing a genetic
+              defense against malaria. Key challenges include limited access to early diagnosis and newborn screening,
+              insufficient awareness, and a lack of comprehensive care facilities, especially in rural areas. Managing
+              SCD is often hampered by economic barriers and inadequate resources for pain and complication management.
+              Addressing SCD in Africa requires improved healthcare accessibility, greater awareness, supportive
+              national health policies, and international collaboration to enhance treatment and management strategies.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="./assets/images/man.jpeg"
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+              height="500" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"
+              focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+              fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+          </div>
+
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Combating Sickle Cell in Africa: <span
+                class="text-body-secondary">Strategies for Early Detection, Improved Care, and Community
+                Support".</span></h2>
+            <p class="lead">
+            <h5>Newborn Screening</h5>Implementing widespread newborn screening programs to identify SCD early is
+            crucial. Early diagnosis allows for prompt initiation of preventive care measures, potentially reducing
+            mortality and morbidity.
+
+            <h5>Public Awareness and Education</h5> Raising awareness about SCD through public health campaigns,
+            including its genetic basis, importance of genetic counseling, and management strategies, can significantly
+            impact how the disease is understood and managed in communities.
+
+            <h5>Genetic Counseling</h5> Providing accessible genetic counseling services can help prospective parents
+            understand their risks of having a child with SCD and make informed reproductive choices.
+
+            <h5>Improving Healthcare Access</h5> Strengthening healthcare systems to provide comprehensive care for SCD
+            patients is vital. This includes ensuring the availability of essential medicines, regular health check-ups,
+            and specialist care.
+
+            <h5>Pain Management Programs</h5> Developing effective pain management protocols and ensuring the
+            availability of necessary medications can greatly improve the quality of life for SCD patients.
+
+            <h5>Preventive Care</h5> Regular vaccination and prophylactic antibiotics for children with SCD can prevent
+            severe infections. Educating families about the importance of hydration, infection prevention, and
+            recognizing early signs of complications is also key.
+
+            <h5>Research and Development</h5> Investing in research specific to the African context, focusing on better
+            treatment modalities, disease management strategies, and potentially curative therapies like gene therapy,
+            is important.
+
+            <h5>Community Support Systems</h5> Building strong community support networks, including support groups and
+            advocacy organizations, can provide emotional and social support to individuals and families affected by
+            SCD.
+
+            <h5>Policy and Funding</h5> Developing national health policies that prioritize SCD as a significant health
+            issue and allocating sufficient resources for SCD programs are essential steps.
+
+            <h5>International Collaboration</h5> Collaborating with international health organizations and leveraging
+            global expertise and resources can aid in building capacity for SCD care and research in Africa.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="./assets/images/childinject.jpeg" alt=""
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+              width="500" height="500">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
 
 
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container -->
-
-
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>© Faith 2023  <a href="#">Privacy</a>
-  </footer>
-</main>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 
 
-</body></html>
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© Faith 2023 <a href="#">Privacy</a>
+      </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
