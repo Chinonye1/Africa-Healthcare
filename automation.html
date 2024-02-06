@@ -148,38 +148,57 @@
                     <pre class="language-python">
                         <code>
                             import requests
-                            import os
-                    
-                            # Function to fetch and download images from an API
-                            def fetch_images(api_key, query, count=10):
-                                base_url = 'https://api.unsplash.com/photos/random'
-                                headers = {'Authorization': f'Client-ID {api_key}'}
-                                params = {'query': query, 'count': count}
-                    
-                                response = requests.get(base_url, headers=headers, params=params)
-                                images = response.json()
-                    
-                                return images
-                    
-                            # Function to save images to a local directory
-                            def save_images(images, save_path):
-                                os.makedirs(save_path, exist_ok=True)
-                    
-                                for i, image in enumerate(images):
-                                    image_url = image['urls']['regular']
-                                    response = requests.get(image_url)
-                    
-                                    with open(os.path.join(save_path, f'image_{i+1}.jpg'), 'wb') as f:
-                                        f.write(response.content)
-                    
-                            # Example usage
-                            api_key = 'your_unsplash_api_key'
-                            query = 'beautiful places in Africa'
-                            image_count = 5
-                            save_directory = 'images'
-                    
-                            images = fetch_images(api_key, query, image_count)
-                            save_images(images, save_directory)
+                            from bs4 import BeautifulSoup
+                            import pandas as pd
+
+
+
+                            def scrape_flu_vaccination_data(url):
+                            try:
+                             # Send a GET request to the URL
+                              response = requests.get(url)
+                             response.raise_for_status()  # Raise an error for bad responses
+
+                             # Parse the HTML content of the page
+                           soup = BeautifulSoup(response.content, 'html.parser')
+
+                            # Find the first table - adjust this as needed for the specific data table
+                             table = soup.find('table')
+
+                            if table:
+                             # Convert the HTML table to a DataFrame
+                           df = pd.read_html(str(table))[0]
+                           return df
+                             else:
+                                 print("No table found on the webpage.")
+                                return pd.DataFrame()
+                            except requests.RequestException as e:
+                                  print(f"Request failed: {e}")
+                                  return pd.DataFrame()
+
+
+                            def clean_data(df):
+                           # Example cleaning function - adjust based on the structure of your data
+                           if not df.empty:
+                           # Perform data cleaning steps here, such as renaming columns, handling missing data, etc.
+                            cleaned_df = df.rename(columns=lambda x: x.strip()).dropna()
+                          return cleaned_df
+                           else:
+                            return df
+
+
+                        if __name__ == "__main__":
+                       # Placeholder URL - replace with the actual URL you intend to scrape
+                        url = 'https://www.cdc.gov/flu/fluvaxview/coverage-2021estimates.htm'
+                         flu_data = scrape_flu_vaccination_data(url)
+
+                        if not flu_data.empty:
+                         cleaned_flu_data = clean_data(flu_data)
+                       print("Flu vaccination data scraped and cleaned successfully.")
+                       print(cleaned_flu_data.head())
+                        else:
+                           print("No data scraped.")
+
                         </code>
                     </pre>
                     
