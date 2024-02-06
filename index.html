@@ -13,111 +13,12 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="/style.css">
   <meta name="theme-color" content="#712cf9">
-
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-    .b-example-divider {
-      width: 100%;
-      height: 3rem;
-      background-color: rgba(0, 0, 0, .1);
-      border: solid rgba(0, 0, 0, .15);
-      border-width: 1px 0;
-      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-    }
-
-    .b-example-vr {
-      flex-shrink: 0;
-      width: 1.5rem;
-      height: 100vh;
-    }
-
-    .bi {
-      vertical-align: -.125em;
-      fill: currentColor;
-    }
-
-    .nav-scroller {
-      position: relative;
-      z-index: 2;
-      height: 2.75rem;
-      overflow-y: hidden;
-    }
-
-    .nav-scroller .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .btn-bd-primary {
-      --bd-violet-bg: #712cf9;
-      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-      --bs-btn-font-weight: 600;
-      --bs-btn-color: var(--bs-white);
-      --bs-btn-bg: var(--bd-violet-bg);
-      --bs-btn-border-color: var(--bd-violet-bg);
-      --bs-btn-hover-color: var(--bs-white);
-      --bs-btn-hover-bg: #6528e0;
-      --bs-btn-hover-border-color: #6528e0;
-      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-      --bs-btn-active-color: var(--bs-btn-hover-color);
-      --bs-btn-active-bg: #5a23c8;
-      --bs-btn-active-border-color: #5a23c8;
-    }
-
-    .bd-mode-toggle {
-      z-index: 1500;
-    }
-
-    .carousel-item {
-      margin-bottom: 4rem;
-    }
-
-    .carousel-item>img {
-      min-width: 100vw;
-      height: 50%;
-      overflow: hidden !important;
-      object-fit: cover !important;
-      left: 0 !important;
-      right: 0 !important;
-      margin: 0 auto !important
-    }
-
-    .bd-mode-toggle .dropdown-menu .active .bi {
-      display: block !important;
-    }
-  </style>
-
-
   <!-- Custom styles for this template -->
 </head>
 
 <body class="bg-body-tertiary">
-
-
   <header data-bs-theme="bg-body-tertiary ">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark mb-4">
       <div class="container-fluid">
@@ -126,7 +27,6 @@
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
       </div>
     </nav>
   </header>
@@ -178,93 +78,119 @@
       </button>
     </div>
 
+    <div class=" container-fluid ">
+      <div class=" ">
+        <div class="justify-content-center card-display">
+          <div class=" shadow-lg  card rounded m-2 px-4">
+            <img src="./assets/images/culture.jpeg" alt=""
+              class="bd-placeholder-img rounded-circle mx-auto d-block mt-2 " width="140" height="140">
+            <h2 class="fw-normal text-center">Culture</h2>
+            <p class="text-center">"Explore Africa's pulse: a journey of rhythm and color, weaving through the heart of
+              its rich traditions
+              and creative spirit."</p>
+            <div class="mx-auto">
+              <p><a class="btn btn-secondary" href="culture.html">View details »</a></p>
+            </div>
 
-    <!-- Marketing messaging and featurettes
-  ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
+          </div>
+          <div class="shadow-lg card rounded m-2 px-4">
+            <img src="./assets/images/map.jpeg" alt="" class="bd-placeholder-img rounded-circle mx-auto d-block mt-2 "
+              width="140" height="140">
+            <h2 class="fw-normal text-center">Geography</h2>
+            <p class="text-center">
+              Let's embark on a journey to discover the captivating geographical wonders of Africa.
 
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img src="./assets/images/culture.jpeg" alt="" class="bd-placeholder-img rounded-circle" width="140"
-            height="140">
-          <h2 class="fw-normal">Culture</h2>
-          <p>Discover Africa's vibrant cultural story through rhythmic beats and vibrant fabrics—a captivating journey
-            into a rich tapestry of tradition and creativity.</p>
-          <p><a class="btn btn-secondary" href="culture.html">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img src="./assets/images/map.jpeg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
-          <h2 class="fw-normal">Geography</h2>
-          <p>Let's embark on a journey to discover the captivating geographical wonders of Africa.</p>
-          <p><a class="btn btn-secondary" href="geography.html">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img src="./assets/images/geopro.jpeg" alt="" class="bd-placeholder-img rounded-circle" width="140"
-            height="140">
-          <h2 class="fw-normal">Tourism sites</h2>
-          <p>Africa is a vast and diverse continent with a plethora of stunning tourist destinations. Here are some of
-            the best tourism sites in Africa, spanning natural wonders, cultural heritage, and historical landmarks:</p>
-          <p><a class="btn btn-secondary" href="tourism.html">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img src="./assets/images/automation.jpeg" alt="" class="bd-placeholder-img rounded-circle" width="140"
-            height="140">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-          <h2 class="fw-normal">Automation project</h2>
-          <p>Let's dive into the challanges faced during this project and how it can be made easy with automation</p>
-          <p><a class="btn btn-secondary" href="automation.html">View details »</a></p>
-        </div><!-- /.row -->
-
-
-        <!-- START THE FEATURETTES -->
+            </p>
+            <div class="mx-auto">
+              <p><a class="btn btn-secondary" href="geography.html">View details »</a></p>
+            </div>
+          </div>
+          <div class=" shadow-lg card rounded m-2 px-4">
+            <img src="./assets/images/geopro.jpeg" alt="" class="bd-placeholder-img
+           rounded-circle mx-auto d-block mt-2 " width="140" height="140">
+            <h2 class="fw-normal text-center">Tourism sites</h2>
+            <p class="text-center">Africa is a vast and diverse continent with a plethora of stunning tourist
+              destinations. Here are some of
+              the best tourism sites in Africa, spanning natural wonders, cultural heritage, and historical landmarks:
+            </p>
+            <div class="mx-auto">
+              <p><a class="btn btn-secondary " href="tourism.html">View details »</a></p>
+            </div>
+          </div>
+          <div class=" shadow-lg card rounded m-2 px-4">
+            <img src="./assets/images/automation.jpeg" alt=""
+              class="bd-placeholder-img rounded-circle mx-auto d-block mt-2 " width="140" height="140">
+            <h2 class="fw-normal text-center">Automation project</h2>
+            <p class="text-center">Let's dive into the challanges faced during this project and how it can be made easy
+              with automation</p>
+            <div class="mx-auto">
+              <p><a class="btn btn-secondary" href="automation.html">View details »</a></p>
+            </div>
+          </div>
+        </div><!-- START THE FEATURETTES -->
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">Africa's Healthcare</h2>
-            <p class="lead">Healthcare in Africa faces significant challenges, including limited resources, a shortage
-              of healthcare professionals, and a high burden of infectious diseases like HIV/AIDS, malaria, and
-              tuberculosis. Additionally, there's a growing prevalence of non-communicable diseases such as diabetes and
-              heart disease. Access to healthcare varies greatly, with rural areas often underserved.
+        <div class="row featurette  featurette-primary-section px-4 ">
+          <div class=" featurette-paragraph  ">
+            <h2 class="featurette-heading text-center fs-1 fw-bold lh-2">Africa's Healthcare</h2>
+            <p class="lead px-2 ">
+              Africa's healthcare landscape is both daunting and dynamic, painted with the broad strokes of adversity
+              yet dotted with sparks of innovation and hope. The continent grapples with a constellation of challenges:
+              resources are scarce, healthcare professionals are few and far between, and infectious diseases such as
+              <span class="text-success">
+                HIV/AIDS, malaria, and tuberculosis </span>cast a long shadow over the health of the population. <br>
 
-              Despite these challenges, there are notable improvements and innovations. Mobile health technologies are
-              expanding access to care, and international partnerships are bolstering local healthcare systems.
-              Governments are increasingly focusing on healthcare reforms and investments.
+              But the tale doesn't end there. The specter of non-communicable diseases is on the rise, with diabetes and
+              heart disease claiming more lives each year. The disparity in healthcare access is stark, leaving rural
+              communities in the lurch, far from the reach of adequate medical care. <br>
 
-              Overall, while healthcare in Africa is marked by diverse and complex challenges, there are also emerging
-              opportunities and initiatives aimed at improving health outcomes across the continent..</p>
+              Yet, amidst these formidable challenges, glimmers of progress shine through. The advent of mobile health
+              technologies is breaking down barriers, bringing healthcare to the doorsteps of those once isolated by
+              geography or circumstance. International partnerships are weaving a stronger fabric for local healthcare
+              systems, infusing them with the resilience to face the future. Governments are awakening to the call of
+              healthcare reform, channeling funds and focus towards initiatives that promise a healthier horizon. <br>
+
+              In essence, while the healthcare narrative in Africa is fraught with complexity and contrast, it is also a
+              story of resilience, innovation, and gradual transformation. Opportunities are blossoming, driving forward
+              a vision of improved health outcomes that could redefine the continent's future.
+            </p>
           </div>
-          <div class="col-md-5">
-            <img src="./assets/images/test.avif"
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-              height="500" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"
-              focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
-              fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
+          <div class="telescope-image">
+            <img src="./assets/images/test.avif" class="bd-placeholder-img bd-placeholder-img-lg featurette-image
+                      img-fluid mx-auto" width="500" height="500" role="img" focusable="false">
           </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1">Sickle cell anemia in Africa</h2>
-            <p class="lead">Sickle cell disease (SCD) is a significant health challenge in Africa, home to the majority
-              of global SCD cases. The high prevalence is partly due to the sickle cell trait providing a genetic
-              defense against malaria. Key challenges include limited access to early diagnosis and newborn screening,
-              insufficient awareness, and a lack of comprehensive care facilities, especially in rural areas. Managing
-              SCD is often hampered by economic barriers and inadequate resources for pain and complication management.
-              Addressing SCD in Africa requires improved healthcare accessibility, greater awareness, supportive
-              national health policies, and international collaboration to enhance treatment and management strategies.
+        <div class="row featurette-sickle-cell px-4">
+          <div class=" order-md-2 sickle-cell-paragraph">
+            <h2 class="featurette-heading  lh-2 text-center">Sickle cell anemia in Africa</h2>
+            <p class="lead">Sickle Cell Disease (SCD) stands as a formidable health challenge across Africa,
+              the epicenter of the world's SCD cases.
+              This high prevalence is intertwined with the sickle cell trait's evolutionary advantage against malaria, a
+              bittersweet testament
+              to survival against one threat that brings about another.
+
+              Navigating the landscape of SCD in Africa reveals significant hurdles: early diagnosis and newborn
+              screening are rarities rather than norms,
+              awareness is in dire shortage, and comprehensive care facilities are scattered thinly, especially beyond
+              the urban sprawl.<br> The battle against SCD is further complicated by economic constraints and a scarcity
+              of
+              resources dedicated to managing
+              pain and the myriad complications that accompany the disease.
+
+              Confronting SCD's impact requires a multi-faceted approach: enhancing healthcare accessibility is
+              paramount, along with boosting awareness at both community and national levels. Supportive health policies
+              tailored to meet the unique
+              challenges of SCD, coupled with international cooperation,
+              are crucial to advance treatment options and management strategies. Together, these efforts can forge a
+              path towards a future where Sickle Cell Disease's grip on Africa is significantly loosened, offering hope
+              and healing to millions.
             </p>
           </div>
-          <div class="col-md-5 order-md-1">
+          <div class="sickle-cell-paragraph-image order-md-1">
             <img src="./assets/images/man.jpeg"
               class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
               height="500" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"
@@ -278,65 +204,85 @@
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">Combating Sickle Cell in Africa: <span
-                class="text-body-secondary">Strategies for Early Detection, Improved Care, and Community
-                Support".</span></h2>
-            <p class="lead">
-            <h5>Newborn Screening</h5>Implementing widespread newborn screening programs to identify SCD early is
-            crucial. Early diagnosis allows for prompt initiation of preventive care measures, potentially reducing
-            mortality and morbidity.
 
-            <h5>Public Awareness and Education</h5> Raising awareness about SCD through public health campaigns,
-            including its genetic basis, importance of genetic counseling, and management strategies, can significantly
-            impact how the disease is understood and managed in communities.
+          <div>
+            <h2 class="featurette-heading fw-normal lh-1 text-center">Combating Sickle Cell in Africa </h2>
+            <div class="solution-section">
+              <div class="card px-4 mx-4 my-4 bg-secondary-subtle">
+                <h5 class="card-title my-2">Newborn Screening</h4>
+                  <p>Implementing widespread newborn screening programs to identify SCD early is
+                    crucial. Early diagnosis allows for prompt initiation of preventive care measures, potentially
+                    reducing
+                    mortality and morbidity.</p>
+              </div>
+              <div class="card px-4 mx-4 my-4 bg-secondary-subtle">
+                <h5 class="card-title my-2">Public Awareness</h5>
 
-            <h5>Genetic Counseling</h5> Providing accessible genetic counseling services can help prospective parents
-            understand their risks of having a child with SCD and make informed reproductive choices.
+                <p> Raising awareness about SCD through public health campaigns,
+                  including its genetic basis, importance of genetic counseling, and management strategies, can
+                  significantly
+                  impact how the disease is understood and managed in communities.
+                </p>
+              </div>
 
-            <h5>Improving Healthcare Access</h5> Strengthening healthcare systems to provide comprehensive care for SCD
-            patients is vital. This includes ensuring the availability of essential medicines, regular health check-ups,
-            and specialist care.
+              <div class="card px-4 mx-4 my-4 bg-secondary-subtle">
+                <h5 class="card-title my-2">Genetic Counseling</h5>
+                <p> Providing accessible genetic counseling services can help prospective parents
+                  understand their risks of having a child with SCD and make informed reproductive choices.</p>
+              </div>
+              <div class="card px-4 mx-4 my-4 bg-secondary-subtle">
+                <h5 class="card-title my-2">Improving Healthcare Access</h5> Strengthening healthcare systems to provide comprehensive care for
+                SCD
+                patients is vital. This includes ensuring the availability of essential medicines, regular health
+                check-ups,
+                and specialist care.
+              </div>
+              <div class="card px-4 mx-4 my-4 bg-secondary-subtle">
+                <h5 class="card-title my-2">Pain Management Programs</h5>
+                <p> Developing effective pain management protocols and ensuring the
+                  availability of necessary medications can greatly improve the quality of life for SCD patients.</p>
+              </div>
+              <div class="card px-4 mx-4 my-4 bg-secondary-subtle">
+                <h5 class="card-title my-2">Preventive Care</h5>
+                <p>
+                  Regular vaccination and prophylactic antibiotics for children with SCD can prevent
+                  severe infections. Educating families about the importance of hydration, infection prevention, and
+                  recognizing early signs of complications is also key.
+                </p>
+              </div>
 
-            <h5>Pain Management Programs</h5> Developing effective pain management protocols and ensuring the
-            availability of necessary medications can greatly improve the quality of life for SCD patients.
+              <div class="card px-4 mx-4 my-4 bg-secondary-subtle">
+                <h5 class="card-title my-2">Research and Development</h5>
+                <p> Investing in research specific to the African context, focusing on better
+                  treatment modalities, disease management strategies, and potentially curative therapies like gene
+                  therapy,
+                  is important.</p>
 
-            <h5>Preventive Care</h5> Regular vaccination and prophylactic antibiotics for children with SCD can prevent
-            severe infections. Educating families about the importance of hydration, infection prevention, and
-            recognizing early signs of complications is also key.
+              </div>
+              <div class="card px-4 mx-4 my-4 bg-secondary-subtle">
+                <h5 class="card-title my-2">Community Support Systems</h5>
+                <p>Building strong community support networks, including support groups and
+                  advocacy organizations, can provide emotional and social support to individuals and families affected by
+                  SCD.</p>
+              </div>
+              <div class="card px-4 mx-4 my-4 bg-secondary-subtle">
+                <h5 class="card-title my-2">Policy and Funding</h5>
+                <p> Developing national health policies that prioritize SCD as a significant health
+                  issue and allocating sufficient resources for SCD programs are essential steps.</p>
 
-            <h5>Research and Development</h5> Investing in research specific to the African context, focusing on better
-            treatment modalities, disease management strategies, and potentially curative therapies like gene therapy,
-            is important.
+              </div>
+              <div class="card px-4 mx-4 my-4 bg-secondary-subtle">
+                <h5>International Collaboration</h5>
+                <p>
+                  Collaborating with international health organizations and leveraging
+                  global expertise and resources can aid in building capacity for SCD care and research in Africa.</p>
+              </div>
+            </div>
 
-            <h5>Community Support Systems</h5> Building strong community support networks, including support groups and
-            advocacy organizations, can provide emotional and social support to individuals and families affected by
-            SCD.
-
-            <h5>Policy and Funding</h5> Developing national health policies that prioritize SCD as a significant health
-            issue and allocating sufficient resources for SCD programs are essential steps.
-
-            <h5>International Collaboration</h5> Collaborating with international health organizations and leveraging
-            global expertise and resources can aid in building capacity for SCD care and research in Africa.</p>
           </div>
-          <div class="col-md-5">
-            <img src="./assets/images/childinject.jpeg" alt=""
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto shadow-lg p-3 mb-5 bg-body-tertiary rounded"
-              width="500" height="500">
+
           </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-
-
-
-
-
-        <!-- /END THE FEATURETTES -->
-
-      </div><!-- /.container -->
+          <!-- /.container -->
 
 
       <!-- FOOTER -->
